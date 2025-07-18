@@ -16,7 +16,7 @@ extension TDSData {
                 return value.readUTF16String(length: value.readableBytes)
 
             case .charLegacy, .varcharLegacy, .char, .varchar, .text:
-                return value.readString(length: value.readableBytes, encoding: .utf8)
+                return value.readString(length: value.readableBytes)
 
             default:
                 return nil
