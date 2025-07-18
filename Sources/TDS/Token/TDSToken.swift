@@ -98,7 +98,7 @@ public enum TDSTokens {
     public struct ColMetadataToken: TDSToken {
         public var type: TokenType = .colMetadata
         var count: UShort
-        var colData: [ColumnData]
+        public var colData: [ColumnData]
 
         public struct ColumnData: Metadata {
             public var userType: ULong
