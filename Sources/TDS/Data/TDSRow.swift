@@ -1,7 +1,7 @@
 
 public struct TDSRow: CustomStringConvertible {
     final class LookupTable {
-        let colMetadata: TDSTokens.ColMetadataToken
+        public let colMetadata: TDSTokens.ColMetadataToken
 
         struct Value {
             let index: Int
